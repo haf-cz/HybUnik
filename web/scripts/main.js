@@ -111,11 +111,21 @@ function onLoadLast() {
 					/******* TADY vime, ze je vse vporadku *****/
 					recap.innerHTML = ""; // jestli teda vubec bude potreba...
 					document.body.className = "OK";
+					// notify the server...
+					httpGetAsync("https://localhost:5001/api/result?status=OK",
+						function(msg) {
+							recap.innerHTML = "OK we got:" + msg + ".";
+						});
 				}
 				else
 				{
 					/******* TADY vime, ze maji neco spatne *****/
 					recap.innerHTML += " Jeste neni spravny cas...";
+					// notify the server...
+					httpGetAsync("https://localhost:5001/api/result?status=NOK",
+						function(msg) {
+							recap.innerHTML += "NOK we got:" + msg + ".";
+						});
 				}
 			}
 			else
@@ -132,4 +142,16 @@ function onLoadLast() {
 	{
 		recap.innerHTML = 'Neplatna rezervace...';
 	}
+}
+
+/*******************************/
+function httpGetAsync(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    xmlHttp.send(null);
 }
