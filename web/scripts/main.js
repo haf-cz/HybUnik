@@ -109,7 +109,8 @@ function onLoadLast() {
 				if(isCorrect(ticket))
 				{
 					/******* TADY vime, ze je vse vporadku *****/
-					recap.innerHTML += " OK";
+					recap.innerHTML = ""; // jestli teda vubec bude potreba...
+					document.body.className = "OK";
 				}
 				else
 				{

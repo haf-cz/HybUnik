@@ -1,8 +1,15 @@
 body {
-  background-image: url("../img/pozadi.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #9cc2e5;
+}
+
+body.normal {
+	background-image: url("../img/pozadi.png");
+}
+
+body.OK {
+	background-image: url("../img/pozadi2.png");
 }
 
 .main {
