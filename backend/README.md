@@ -9,9 +9,30 @@ Once msg comes to endpoint GET/PUT e.g. \check\
 It will send msg on COM to attached HW part and (if necesary - again via REST API) notify the operator.
 For testing purposes also other endpoint should be available e.g. \test\green, test\red, ...
 
+### backend - parts
+- [x] REST server
+- [ ] HW interceptor
+- [ ] Operator notification
+
 ## HW
 
 For the HW part Arduino arduino-beetle-atmega32u4-usb could be used / or any similar HW.
 Simple controler waiting for specific msg on SerialPort.
 For Positive and negative scenarios different msg might be needed.
-Therefore several smg should be implemented e.g. OK,NOT,ERR,RESET
+Therefore several msg should be implemented e.g. OK,NOT,ERR,RESET
+
+### HW - check
+- [ ] prepare demo with LEDs
+- [ ] check HW installed
+- [ ] prepare "interface" for installed HW
+
+### HW - OK
+ - [ ] Red should go off
+ - [ ] green should go on
+
+### HW - NOK
+ - [ ] Red should blink for 5s...
+
+### HW - Test?
+ TBDiscussed
+
