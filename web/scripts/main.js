@@ -16,8 +16,8 @@ function isNullOrEmpty(item)
 /*************   SPRAVNE hodnoty pro pruchod ****************************/
 var correct = {
 	TicketNumber : "0573",
-	Date : "25.9.2019",
-	Time : "11:55"
+	Date : "22.09.2019",
+	Time : "21:11"
 };
 
 function isCorrect(ticket)
@@ -115,7 +115,7 @@ function onLoadLast() {
 				else
 				{
 					/******* TADY vime, ze maji neco spatne *****/
-					recap.innerHTML += " Try agains...";
+					recap.innerHTML += " Jeste neni spravny cas...";
 				}
 			}
 			else
