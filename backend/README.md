@@ -2,6 +2,12 @@
 
 once the web reaches the last page it should send request to REST based backend which will serve as trigger for HW and/or other purposes (e.g. notify operator)
 
+## chrome API to serial
+
+For the Serial communication potencialy Chrome API could be used.
+This reduced possible failing components and issues while running.
+https://stackoverflow.com/questions/24986049/chrome-extension-reading-from-serial-port
+
 ## backend
 
 Will be listening on http for communication possibly in JSON other formats. 
