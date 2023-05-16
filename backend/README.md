@@ -4,5 +4,10 @@ once the web reaches the last page it should send request to REST based backend 
 
 For simplicity backend will be complete done in node.js HW part removed until needed.
 
-## notes
-node.js with play-sound and express.
+## Dependencies
+ * play-sound
+ * express
+
+## Endpoints
+* test
+* ok
