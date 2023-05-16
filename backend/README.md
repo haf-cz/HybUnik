@@ -11,3 +11,6 @@ For simplicity backend will be complete done in node.js HW part removed until ne
 ## Endpoints
 * test
 * ok
+
+## after clone
+run `npm install` to install missing dependencies.
