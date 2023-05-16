@@ -14,7 +14,7 @@ staci zkopirovat slozku "web" a jeji obsah na disk ciloveho PC a pridat odkaz na
 
 ### Server
 
-TBD
+detaily v [backend-readme](backend/README.md)
 
 ### doporuceni
 
