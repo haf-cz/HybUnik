@@ -14,3 +14,9 @@ For simplicity backend will be complete done in node.js HW part removed until ne
 
 ## after clone
 run `npm install` to install missing dependencies.
+
+## how to run
+navigate to backend folder and run either `npm start` or `node ./src/server.js`.
+
+## notes
+on OK endpoint called a sound wil be played. For that you have to setup default player in windows...
