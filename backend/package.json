@@ -19,7 +19,7 @@
   "homepage": "https://github.com/haf-cz/HybUnik#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "play-sound": "^1.1.5"
+    "play-sound": "^1.1.6"
   },
   "devDependencies": {}
 }
